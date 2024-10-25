@@ -36,6 +36,7 @@
 //#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V3 // Uncomment for the V3.0 board, otherwise V2.0 is assumed
 //#define BX_ALL_METAL_HOTEND                // Uncomment for newer H2 extruder with all metal heatbreak
 //#define BX_SWAP_ZM_E1M                     // Uncomment to swap Z and E1 motors
+#define BIQU_BX
 
 /**
  * Configuration.h
@@ -2454,7 +2455,7 @@
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
   #define EEPROM_AUTO_INIT    // Init EEPROM automatically on any errors.
-  #define EEPROM_INIT_NOW     // Init EEPROM on first boot after a new build.
+  //#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
 #endif
 
 // @section host
